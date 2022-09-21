@@ -1,0 +1,30 @@
+POST http://localhost:4002/products
+content-type: application/json
+
+{
+    "name": "lapiseira",
+    "price": 12.0,
+    "id": "001"
+}
+
+###
+
+GET http://localhost:4002/products
+
+###
+
+GET http://localhost:4002/products/003
+
+###
+
+PUT http://localhost:4002/products/003
+content-type: application/json
+
+{
+    "name": "Fichario",
+    "price": 38.00
+}
+
+###
+
+DELETE http://localhost:4002/products/001
